@@ -17,6 +17,26 @@ export default function App() {
   const [selectedProject, setSelectedProject] = useState(null);
   const [terminalOpen, setTerminalOpen] = useState(false);
   const [resumeOpen, setResumeOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('theme');
+      if (saved) return saved === 'dark';
+      return true; // Default dark theme
+    }
+    return true;
+  });
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  }, [darkMode]);
+
+  const toggleTheme = () => setDarkMode(prev => !prev);
 
   // Keyboard shortcut: Ctrl+K or Cmd+K toggles the terminal CLI
   useEffect(() => {
@@ -31,10 +51,12 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-cyber-950 text-slate-100 relative selection:bg-cyanGlow selection:text-cyber-950">
+    <div className="min-h-screen bg-slate-50 dark:bg-cyber-950 text-slate-800 dark:text-slate-100 relative selection:bg-cyan-500 selection:text-white transition-colors duration-300">
       
-      {/* Navbar with live uptime beacon */}
+      {/* Responsive Navbar with Black & White Theme Toggle */}
       <Navbar 
+        darkMode={darkMode}
+        onToggleTheme={toggleTheme}
         onOpenTerminal={() => setTerminalOpen(true)}
         onOpenResume={() => setResumeOpen(true)}
       />

@@ -6,9 +6,9 @@ export const skillsData = [
     skills: [
       { name: "React.js", level: 92, highlight: "Component Architecture, Hooks, Context, State Management" },
       { name: "JavaScript (ES6+)", level: 95, highlight: "Async/Await, Closures, DOM Manipulation, Web APIs" },
-      { name: "HTML5 & Modern CSS3", level: 95, highlight: "Flexbox, Grid, Custom Properties, Animations" },
-      { name: "Tailwind CSS & Styling", level: 90, highlight: "Design Systems, Dark Mode, Utility-First CSS" },
-      { name: "Responsive UI/UX", level: 90, highlight: "Mobile-First Design, Accessibility, Cross-Browser Compatibility" }
+      { name: "HTML5 & Modern CSS3", level: 95, highlight: "Flexbox, Grid, Custom Properties, Keyframe Animations" },
+      { name: "Tailwind CSS & Design Systems", level: 90, highlight: "Utility-First, Dark/Light Themes, Accessible UI Tokens" },
+      { name: "Responsive UI & Webchat", level: 92, highlight: "Multi-device layout, Real-time Webchat, Mobile-First Design" }
     ]
   },
   {
@@ -16,11 +16,11 @@ export const skillsData = [
     icon: "Server",
     description: "Robust, fault-tolerant microservices, high-throughput APIs, and enterprise server logic.",
     skills: [
-      { name: "Node.js & Express.js", level: 90, highlight: "REST APIs, Middleware, Event-Driven Architecture, NPM" },
-      { name: "PHP (5.x - 8.x)", level: 95, highlight: "Core PHP, OOP, Legacy Refactoring, Enterprise Backend" },
-      { name: "CodeIgniter Framework", level: 92, highlight: "MVC Architecture, Custom Helpers, Security Sanitization" },
-      { name: "RESTful API Design", level: 94, highlight: "Endpoint Versioning, Swagger/OpenAPI, Rate Limiting, JWT Auth" },
-      { name: "Real-Time Communication", level: 88, highlight: "WebSockets, Polling Mechanisms, Server-Sent Events" }
+      { name: "Node.js & Express.js", level: 90, highlight: "RESTful APIs, Middleware, Event-Driven Architecture, NPM" },
+      { name: "PHP (Core & Modern)", level: 95, highlight: "PHP 7.x/8.x, OOP, Service Layers, Legacy Refactoring" },
+      { name: "CodeIgniter Framework", level: 92, highlight: "MVC Architecture, Custom Helpers, Input Sanitization & Security" },
+      { name: "RESTful API Design & Postman", level: 94, highlight: "API Versioning, Postman Automated Testing, Swagger/OpenAPI, JWT" },
+      { name: "Data Export & File Management", level: 90, highlight: "XLSX Report Downloader, Dynamic Audio File Manager, S3/Local Storage" }
     ]
   },
   {
@@ -28,34 +28,34 @@ export const skillsData = [
     icon: "Database",
     description: "High-scale relational and document databases with optimization for heavy read/write loads.",
     skills: [
-      { name: "MySQL", level: 92, highlight: "Complex Joins, Index Optimization, Replication, Stored Procedures" },
-      { name: "MongoDB", level: 88, highlight: "Aggregation Pipelines, Mongoose ODM, Schema Design" },
-      { name: "Microsoft SQL Server", level: 86, highlight: "Enterprise CDR Storage, T-SQL, Stored Procs, Batch Pipelines" },
-      { name: "Database Performance Tuning", level: 88, highlight: "Query Profiling, Execution Plans, Deadlock Avoidance" }
+      { name: "MySQL", level: 94, highlight: "Query Optimization, Indexing, Triggers, Stored Procedures, Audit Logs" },
+      { name: "MongoDB", level: 88, highlight: "Aggregation Pipelines, Mongoose ODM, Schema Architecture, MERN Stack" },
+      { name: "Microsoft SQL Server", level: 88, highlight: "Enterprise CDR Storage, T-SQL, Stored Procs, Batch Ingestion" },
+      { name: "Database Performance Tuning", level: 90, highlight: "Query Profiling, Execution Plans, Deadlock Avoidance, High Throughput" }
     ]
   },
   {
-    category: "DevOps, Cloud & Infrastructure",
+    category: "DevOps, Linux & Infrastructure",
     icon: "CloudCog",
     description: "Automated delivery pipelines, server hardening, and high-availability Linux hosting.",
     skills: [
-      { name: "CI/CD & Jenkins", level: 88, highlight: "Automated Build Pipelines, Multi-Environment Deployments" },
-      { name: "Version Control (Git/GitLab/SVN)", level: 92, highlight: "GitFlow, Branching Strategies, Conflict Resolution" },
-      { name: "Linux & Oracle Linux", level: 90, highlight: "ECSAPP1 Administration, Bash Scripting, Cron, Systemd" },
-      { name: "Web Servers (Apache/Nginx)", level: 88, highlight: "Reverse Proxy, Virtual Hosts, SSL/TLS, URL Rewrites" },
-      { name: "Docker Containerization", level: 82, highlight: "Container Packaging, Microservices Isolation" }
+      { name: "Linux & Oracle Linux 9.X", level: 92, highlight: "Logical Volume Manager (LVM), HTTPS, Systemd, ECSAPP1/2 Administration" },
+      { name: "CI/CD & Jenkins", level: 88, highlight: "Automated Build Pipelines, Dev/UAT/Pre-prod Deployment Workflows" },
+      { name: "Version Control (Git/GitLab/SVN)", level: 94, highlight: "Repository Permissions, Branching Strategies, Conflict Protocols" },
+      { name: "Web Servers (Apache/Nginx)", level: 90, highlight: "Virtual Hosts, Reverse Proxy, SSL/TLS Certificates, URL Rewriting" },
+      { name: "VAPT Compliance & Hardening", level: 90, highlight: "Vulnerability Remediation, OWASP Security Sanitization, Zero Outage" }
     ]
   },
   {
-    category: "Domain: Telephony, AI & CRM",
+    category: "Telephony, CRM & AI Protocols",
     icon: "Radio",
-    description: "Mission-critical telecom protocols, conversational AI logic, and enterprise CRM pipelines.",
+    description: "Mission-critical emergency protocols, CRM integrations, and conversational bot intelligence.",
     skills: [
-      { name: "Telephony (SIP/RTP, PRI)", level: 90, highlight: "Cisco PBX Integration, Voice/SMS Gateways, Failsafe Routing" },
-      { name: "Emergency Response Systems (ECR)", level: 94, highlight: "SATARK Engine, Life-Safety Workflows, ECSAPP1" },
-      { name: "Conversational AI & Prompt Eng.", level: 88, highlight: "System Prompts, Bot Logic, Contextual Memory, Intent Handlers" },
-      { name: "CRM Integration (Salesforce / Custom)", level: 88, highlight: "Bi-directional Data Sync, Webhook Triggers, Customer Journey" },
-      { name: "Incident Remediation & Security", level: 92, highlight: "Zero-Downtime Hot-Patching, Vulnerability Analysis" }
+      { name: "Telephony (SIP/RTP, Cisco PBX, PRI)", level: 94, highlight: "Cisco PBX Integration, PRI Gateways, Failsafe Voice Escalations" },
+      { name: "Emergency Call Response (ECR)", level: 96, highlight: "SATARK Engine, CUBE ECR (Floors/Depts/Rooms), Life-Safety Alarms" },
+      { name: "Salesforce (SFDC) CRM Integration", level: 90, highlight: "Process_Code__c, CTI Task Object Mapping, Agent Multi-Match Popups" },
+      { name: "SMS Gateways & WABA", level: 90, highlight: "Automated Closure Workflows, WhatsApp Business API, Character Limits" },
+      { name: "Conversational AI & Prompt Eng.", level: 88, highlight: "System Prompts, Guardrails, State Machines, Live Agent Handoff" }
     ]
   }
 ];

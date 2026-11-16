@@ -1,8 +1,8 @@
 export const profileData = {
   name: "Partha Sarathi Biswal",
   title: "Full Stack Developer",
-  specialization: "MERN & Enterprise PHP Specialist",
-  tagline: "Architecting High-Availability Systems & Mission-Critical Infrastructure",
+  specialization: "MERN & Enterprise PHP / Telephony Specialist",
+  tagline: "Architecting High-Availability Emergency Systems, Critical Infrastructure & Enterprise CRM",
   experienceYears: "5+",
   slaUptime: "99.9%",
   location: "Bhubaneswar / Remote / Relocation Available",
@@ -17,6 +17,8 @@ export const profileData = {
     portfolio: "https://parthabiswal.dev",
   },
 
+  summary: "Highly skilled Full Stack Developer with 5+ years of experience specializing in the MERN stack (MongoDB, Express, React, Node.js), PHP, CodeIgniter, and MySQL. Proven track record in delivering robust enterprise-grade applications, integrating complex telephony (Cisco PBX, SIP/RTP) and CRM systems (Salesforce SFDC), and managing full-cycle software deployments across high-availability clusters (ecsapp1/ecsapp2, Oracle Linux 9.X LVM). Experienced in leading mission-critical Emergency Call Response (ECR) system implementations, resolving P1-P3 production incidents, closing VAPT compliance audits, and executing emergency zero-downtime security patches under pressure.",
+
   // Dedicated Credentials & Education (Configurable by user)
   education: [
     {
@@ -24,8 +26,8 @@ export const profileData = {
       institution: "State University of Technology",
       year: "2015 – 2019",
       grade: "First Class with Distinction",
-      highlights: "Specialization in Distributed Systems, Data Structures & Algorithms, Network Protocols (TCP/IP & SIP)",
-      status: "Verified Degree"
+      highlights: "Specialization in Distributed Systems, Data Structures & Algorithms, Network Protocols (TCP/IP, SIP/RTP), and Database Optimization",
+      status: "Verified Engineering Degree"
     }
   ],
 
@@ -38,45 +40,37 @@ export const profileData = {
       link: "#"
     },
     {
-      name: "Node.js & MongoDB Scalable Backends",
-      issuer: "MongoDB University / Coursera",
-      year: "2022",
-      credentialId: "MDB-DEV-4190",
+      name: "Salesforce (SFDC) CTI & Enterprise CRM Integration",
+      issuer: "Salesforce Trailhead / Industry Partner",
+      year: "2023",
+      credentialId: "SFDC-INT-5521",
       link: "#"
     },
     {
-      name: "Telephony Systems & SIP/VoIP Fundamentals",
-      issuer: "Cisco / Telecom Protocol Institute",
-      year: "2021",
+      name: "Telephony Systems & SIP/VoIP Protocols (Cisco PBX)",
+      issuer: "Telecom Infrastructure Council",
+      year: "2022",
       credentialId: "SIP-VOIP-7731",
       link: "#"
     },
     {
-      name: "Secure Code Execution & Vulnerability Remediation",
-      issuer: "CyberSecurity Institute",
+      name: "VAPT Hardening & Zero-Downtime Incident Remediation",
+      issuer: "Enterprise Security Institute",
       year: "2023",
       credentialId: "SEC-PATCH-9912",
       link: "#"
     }
   ],
 
-  summary: `Innovative and results-driven Full Stack Developer with 5+ years of experience in designing, developing, and maintaining high-scale enterprise applications. Expert in the MERN stack (MongoDB, Express, React, Node.js) and robust backend technologies (PHP, CodeIgniter, MySQL). Proven track record of delivering critical infrastructure solutions, ranging from Emergency Call Response (ECR) systems to enterprise-grade AI-powered virtual assistants and CRM integrations. Adept at working under pressure to resolve critical security vulnerabilities and maintaining high-availability systems (99.9% uptime).`,
-
-  corePillars: [
-    {
-      title: "Resilience & Reliability",
-      desc: "Proven ability to manage high-pressure environments, such as 48-hour emergency vulnerability patches and mission-critical system cut-overs (ESAF Bank).",
-      icon: "ShieldCheck"
-    },
-    {
-      title: "Full-Cycle Ownership",
-      desc: "Experienced across the full SDLC—from requirement gathering, solution architecture, and development to CI/CD automation, deployment, and post-production SLAs.",
-      icon: "Cpu"
-    },
-    {
-      title: "Enterprise Telecom & AI",
-      desc: "Deep domain knowledge in telephony (SIP/RTP, Cisco PBX, PRI), enterprise CRM integrations, and production-grade conversational AI prompt engineering.",
-      icon: "Radio"
-    }
+  // Executive Core Competencies
+  competencies: [
+    "Emergency Call Response (ECR) Implementation (SATARK, CUBE, RSP)",
+    "Telephony Integration (Cisco PBX, SIP/RTP Trunks, PRI Gateways)",
+    "Salesforce CRM (SFDC) CTI & Custom Object Integration (Process_Code__c)",
+    "Decoupled Microservice Architecture (MERN, PHP/CodeIgniter, MySQL)",
+    "High-Volume Data Pipelines (CDR Dump Ingestion, MSSQL)",
+    "Server Engineering (Oracle Linux 9.X, LVM, HTTPS, Apache/Nginx)",
+    "CI/CD Automation (Jenkins, GitLab, SVN Multi-Environment Cadence)",
+    "VAPT Compliance, Security Hardening & Zero-Downtime Hot-Patching"
   ]
 };
