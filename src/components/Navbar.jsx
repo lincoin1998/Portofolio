@@ -24,9 +24,9 @@ export default function Navbar({ darkMode, onToggleTheme, onOpenTerminal, onOpen
 
   const navLinks = [
     { name: 'Overview', href: '#hero' },
-    { name: 'Incident', href: '#incident' },
+    { name: 'Incident Room', href: '#incident' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Skills', href: '#skills' },
+    { name: 'Tech Matrix', href: '#skills' },
     { name: 'Experience', href: '#timeline' },
     { name: 'Credentials', href: '#credentials' },
     { name: 'Contact', href: '#contact' }
@@ -36,17 +36,17 @@ export default function Navbar({ darkMode, onToggleTheme, onOpenTerminal, onOpen
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled 
-          ? 'bg-white/90 dark:bg-cyber-950/85 backdrop-blur-md border-b border-slate-200/80 dark:border-cyber-800/80 shadow-sm py-2.5' 
-          : 'bg-transparent py-4'
+          ? 'bg-white/95 dark:bg-cyber-950/90 backdrop-blur-md border-b border-slate-200/80 dark:border-cyber-800/80 shadow-sm py-2.5' 
+          : 'bg-transparent py-3 sm:py-4'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-11 gap-2 sm:gap-4">
+        <div className="flex items-center justify-between h-12 gap-2 sm:gap-4">
           
-          {/* Brand Logo */}
+          {/* Brand Logo & Live SLA Beacon */}
           <div className="flex items-center space-x-3 shrink-0">
-            <a href="#hero" className="flex items-center space-x-2 group shrink-0">
-              <div className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-cyber-850 border border-slate-300 dark:border-cyanGlow/40 flex items-center justify-center text-cyan-600 dark:text-cyanGlow font-mono font-bold text-base shadow-sm group-hover:border-cyan-500 transition-all shrink-0">
+            <a href="#hero" className="flex items-center space-x-2.5 group shrink-0">
+              <div className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-cyber-850 border border-cyan-600/40 dark:border-cyanGlow/40 flex items-center justify-center text-cyan-600 dark:text-cyanGlow font-mono font-bold text-base shadow-sm group-hover:border-cyan-500 transition-all shrink-0">
                 PS
               </div>
               <div>
@@ -58,10 +58,19 @@ export default function Navbar({ darkMode, onToggleTheme, onOpenTerminal, onOpen
                 </span>
               </div>
             </a>
+
+            {/* Live Uptime SLA Pill (Visible on xl+ screens) */}
+            <div className="hidden xl:flex items-center space-x-2 px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 text-xs font-mono shrink-0">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              </span>
+              <span>SLA: 99.9% Uptime</span>
+            </div>
           </div>
 
           {/* Desktop Navigation Links (Visible on lg: 1024px+) */}
-          <nav className="hidden lg:flex items-center space-x-0.5 xl:space-x-1.5 shrink-0">
+          <nav className="hidden lg:flex items-center space-x-0.5 xl:space-x-1 shrink-0">
             {navLinks.map((link) => (
               <a
                 key={link.name}

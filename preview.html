@@ -88,27 +88,38 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="h-16 flex items-center justify-between gap-2 sm:gap-4">
         
-        <!-- Brand Logo & Name -->
-        <a href="#hero" class="flex items-center space-x-2.5 group shrink-0">
-          <div class="w-9 h-9 rounded-xl bg-slate-100 dark:bg-cyber-850 border border-cyan-600/40 dark:border-cyanGlow/40 flex items-center justify-center text-cyan-600 dark:text-cyanGlow font-mono font-bold text-base shadow-sm group-hover:border-cyan-500 transition-all shrink-0">
-            PS
-          </div>
-          <div class="shrink-0">
-            <span class="font-bold text-sm sm:text-base tracking-wide text-slate-900 dark:text-white group-hover:text-cyan-600 dark:group-hover:text-cyanGlow transition-colors block leading-tight whitespace-nowrap">
-              Partha Biswal
+        <!-- Brand Logo & Live SLA Beacon -->
+        <div class="flex items-center space-x-3 shrink-0">
+          <a href="#hero" class="flex items-center space-x-2.5 group shrink-0">
+            <div class="w-9 h-9 rounded-xl bg-slate-100 dark:bg-cyber-850 border border-cyan-600/40 dark:border-cyanGlow/40 flex items-center justify-center text-cyan-600 dark:text-cyanGlow font-mono font-bold text-base shadow-sm group-hover:border-cyan-500 transition-all shrink-0">
+              PS
+            </div>
+            <div class="shrink-0">
+              <span class="font-bold text-sm sm:text-base tracking-wide text-slate-900 dark:text-white group-hover:text-cyan-600 dark:group-hover:text-cyanGlow transition-colors block leading-tight whitespace-nowrap">
+                Partha Biswal
+              </span>
+              <span class="text-[9px] sm:text-[10px] font-mono text-slate-500 dark:text-slate-400 block tracking-wider uppercase whitespace-nowrap">
+                Enterprise Full Stack
+              </span>
+            </div>
+          </a>
+
+          <!-- Live Uptime SLA Pill (Visible on xl+ screens) -->
+          <div class="hidden xl:flex items-center space-x-2 px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 text-xs font-mono shrink-0">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
-            <span class="text-[9px] sm:text-[10px] font-mono text-slate-500 dark:text-slate-400 block tracking-wider uppercase whitespace-nowrap">
-              Enterprise Full Stack
-            </span>
+            <span>SLA: 99.9% Uptime</span>
           </div>
-        </a>
+        </div>
 
         <!-- Desktop Navigation Links (Visible on lg: 1024px+) -->
         <nav class="hidden lg:flex items-center space-x-0.5 xl:space-x-1.5 shrink-0">
           <a href="#hero" class="px-2 xl:px-2.5 py-1.5 rounded-lg text-xs xl:text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyanGlow hover:bg-slate-100 dark:hover:bg-cyber-850 transition-all whitespace-nowrap">Overview</a>
-          <a href="#incident" class="px-2 xl:px-2.5 py-1.5 rounded-lg text-xs xl:text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyanGlow hover:bg-slate-100 dark:hover:bg-cyber-850 transition-all whitespace-nowrap">Incident</a>
+          <a href="#incident" class="px-2 xl:px-2.5 py-1.5 rounded-lg text-xs xl:text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyanGlow hover:bg-slate-100 dark:hover:bg-cyber-850 transition-all whitespace-nowrap">Incident Room</a>
           <a href="#projects" class="px-2 xl:px-2.5 py-1.5 rounded-lg text-xs xl:text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyanGlow hover:bg-slate-100 dark:hover:bg-cyber-850 transition-all whitespace-nowrap">Projects</a>
-          <a href="#skills" class="px-2 xl:px-2.5 py-1.5 rounded-lg text-xs xl:text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyanGlow hover:bg-slate-100 dark:hover:bg-cyber-850 transition-all whitespace-nowrap">Skills</a>
+          <a href="#skills" class="px-2 xl:px-2.5 py-1.5 rounded-lg text-xs xl:text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyanGlow hover:bg-slate-100 dark:hover:bg-cyber-850 transition-all whitespace-nowrap">Tech Matrix</a>
           <a href="#timeline" class="px-2 xl:px-2.5 py-1.5 rounded-lg text-xs xl:text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyanGlow hover:bg-slate-100 dark:hover:bg-cyber-850 transition-all whitespace-nowrap">Experience</a>
           <a href="#credentials" class="px-2 xl:px-2.5 py-1.5 rounded-lg text-xs xl:text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyanGlow hover:bg-slate-100 dark:hover:bg-cyber-850 transition-all whitespace-nowrap">Credentials</a>
           <a href="#contact" class="px-2 xl:px-2.5 py-1.5 rounded-lg text-xs xl:text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyanGlow hover:bg-slate-100 dark:hover:bg-cyber-850 transition-all whitespace-nowrap">Contact</a>
