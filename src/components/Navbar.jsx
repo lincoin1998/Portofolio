@@ -35,8 +35,8 @@ export default function Navbar({ darkMode, onToggleTheme, onOpenTerminal, onOpen
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-          ? 'bg-white/95 dark:bg-cyber-950/90 backdrop-blur-md border-b border-slate-200/80 dark:border-cyber-800/80 shadow-sm py-2.5'
-          : 'bg-transparent py-3 sm:py-4'
+        ? 'bg-white/95 dark:bg-cyber-950/90 backdrop-blur-md border-b border-slate-200/80 dark:border-cyber-800/80 shadow-sm py-2.5'
+        : 'bg-transparent py-3 sm:py-4'
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -64,7 +64,6 @@ export default function Navbar({ darkMode, onToggleTheme, onOpenTerminal, onOpen
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
               </span>
-              {/* <span>SLA: 99.9% Uptime</span> */}
             </div>
           </div>
 
